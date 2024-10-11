@@ -11,7 +11,7 @@ La api estara corriendo sobre http://localhost:3001/
   - [Productos](#productos)
     - [Obtener información del producto](#get-productskeyvalue)
   - [Clientes](#clientes)
-    - [Añadir cliente](#post-clienstadd)
+    - [Añadir cliente](#post-clientsadd)
   - [Ventas](#ventas)
     - [Añadir venta](#post-sales-register)
     - [Obtener Sucursal-Cliente](#get-sales-consultarkeyvalue)
