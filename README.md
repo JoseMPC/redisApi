@@ -13,7 +13,7 @@ La api estara corriendo sobre http://localhost:3001/
   - [Clientes](#clientes)
     - [Añadir cliente](#post-clientsadd)
   - [Ventas](#ventas)
-    - [Añadir venta](#post-sales-register)
+    - [Añadir venta](#post-salesregister)
     - [Obtener Sucursal-Cliente](#get-sales-consultarkeyvalue)
     - [Obtener Registro Histórico](#get-sales-all)
   - [Sucursales](#sucursales)
