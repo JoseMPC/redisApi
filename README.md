@@ -17,7 +17,7 @@ La api estara corriendo sobre http://localhost:3001/
     - [Obtener Sucursal-Cliente](#get-salesconsultarkeyvalue)
     - [Obtener Registro Histórico](#get-salesall)
   - [Sucursales](#sucursales)
-    - [Buscar sucursales cercanas](#get-branchesnearby)
+    - [Buscar sucursales cercanas](#get-branchesnearby?latitude=21&longitude=-104&radius=200)
 - [Cómo Ejecutar la API](#cómo-ejecutar-la-api)
   
 ## Endpoints.
