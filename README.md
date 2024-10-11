@@ -14,12 +14,11 @@ La api estara corriendo sobre http://localhost:3001/
     - [Añadir cliente](#post-clientsadd)
   - [Ventas](#ventas)
     - [Añadir venta](#post-salesregister)
-    - [Obtener Sucursal-Cliente](#get-sales-consultarkeyvalue)
-    - [Obtener Registro Histórico](#get-sales-all)
+    - [Obtener Sucursal-Cliente](#get-salesconsultarkeyvalue)
+    - [Obtener Registro Histórico](#get-salesall)
   - [Sucursales](#sucursales)
-    - [Buscar sucursales cercanas](#get-branches-nearby)
+    - [Buscar sucursales cercanas](#get-branchesnearby)
 - [Cómo Ejecutar la API](#cómo-ejecutar-la-api)
-  - [Ejecutar desde Docker](#ejecutar-desde-docker)
   
 ## Endpoints.
 ### Productos.
