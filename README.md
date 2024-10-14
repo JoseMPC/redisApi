@@ -19,6 +19,7 @@ La api estara corriendo sobre http://localhost:3001/
   - [Sucursales](#sucursales)
     - [Buscar sucursales cercanas](#get-branchesnearby?latitude=21&longitude=-104&radius=200)
 - [Cómo Ejecutar la API](#cómo-ejecutar-la-api)
+- [Cómo Ejecutar Desde un Docker Compose](#cómo-ejecutar-desde-un-docker-compose)
   
 ## Endpoints.
 ### Productos.
@@ -161,3 +162,32 @@ La api estara corriendo sobre http://localhost:3001/
     ```bash
     npm run start
     ```
+
+## Cómo Ejecutar Desde un Docker Compose
+Para ejecutar esta api desde un Docker Compose, copia el siguiente código en un archivo **.yml** con el dombre "docker-compose", en tu terminal navega hasta la ruta donde tienes guardado el archivo y ejecuta el siguiente comando "docker compose up -d".
+```bash
+services:
+  app:
+    image: silverhair/01_requisito_lap-app
+    container_name: node_app
+    ports:
+      - "3001:4000"
+    environment:
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - redis
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    command: npm start
+  redis:
+    image: redis/redis-stack:latest
+    container_name: lab-redis
+    ports:
+      - "6379:6379"
+      - "8001:8001"
+    volumes:
+      - /home/user/Documents/redis_data:/data
+```
+
+La api estara corriendo sobre http://localhost:3001/
